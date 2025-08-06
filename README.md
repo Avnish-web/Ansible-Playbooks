@@ -53,8 +53,8 @@ remote_user = ec2-user
 
 ### 📚 Learn More
 
-* Ansible playbooks are YAML-based workflows that automate tasks across many hosts ([github.com][1], [docs.ansible.com][2], [github.com][3], [docs.ansible.com][4])
-* Roles help you modularize and reuse task logic across playbooks ([docs.ansible.com][5])
+* Ansible playbooks are YAML-based workflows that automate tasks across many hosts
+* Roles help you modularize and reuse task logic across playbooks
 
 ---
 
