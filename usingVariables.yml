@@ -1,0 +1,23 @@
+- hosts: web
+  become: true
+  vars:
+    package_name: httpd
+
+  tasks:
+    - name: Install HTTPD package
+      yum:
+        name: "{{ package_name }}"
+        state: present
+
+    - name: Copy index.html 
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+
+    - name: Start and enable HTTPD service
+      service:
+        name: "{{ package_name }}"
+        state: started
+        enabled: true
+
+# to run that playbook => ansible-playbook vars.yml --extra-vars package_name=httpd
