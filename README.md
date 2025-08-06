@@ -47,10 +47,7 @@ remote_user = ec2-user
    ```
 2. Review and adjust the inventory file.
 3. Ensure your SSH key is authorized on remote hosts.
-4. Run one of the playbooks:
-
-   * `deploy_httpd.yml`
-   * `deploy_bookstore.yml`
+4. Run one of the playbook
 
 ---
 
